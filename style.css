@@ -1,0 +1,88 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #00f260, #0575e6);
+    
+}
+
+.calculator{
+    border: 2px solid #717377;
+    padding: 20px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #8e2de2, #4a00e0);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4)
+}
+
+input {
+    width: 320px;
+    padding: 24px;
+    margin: 24px;
+    border-radius: 10px;
+
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid #eeeeee;
+
+    color: #ffffff;
+    font-size: 40px;
+    text-align: right;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.35);
+}
+
+input::placeholder {
+    color: #cccccc;
+}
+
+button {
+    border: none;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 50%;
+    background: #ffeaa7;
+    color: #2d3436;
+    font-size: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: all 0.25s ease; 
+}
+
+button:hover,
+.operator:hover,
+.equalBtn:hover {
+    transform: translateY(-4px);
+    filter: brightness(1.15); 
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+
+button:active,
+.operator:active,
+.equalBtn:active {
+    transform: scale(0.85);
+    filter: brightness(0.9);  
+    box-shadow: inset 0px 4px 12px rgba(0,0,0,0.35);
+}
+
+
+.equalBtn{
+    background: #00ff88;
+    color: black;
+    box-shadow: 0 0 20px #00ff88;
+
+}
+
+.operator{
+    background-color: #ff9500;
+    color: #000;
+}
+
